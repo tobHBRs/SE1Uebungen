@@ -1,4 +1,7 @@
 package org.hbrs.se1.ws24.exercises.uebung2;
+
+import org.junit.jupiter.api.BeforeEach;
+
 public interface Member {
 
     /**
