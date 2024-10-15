@@ -1,9 +1,6 @@
 package org.hbrs.se1.ws24.exercises.uebung2.test;
 import org.hbrs.se1.ws24.exercises.uebung2.*;
 import org.junit.jupiter.api.*;
-//Imports um Methode dump() zu testen:
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
 
 import static org.junit.jupiter.api.Assertions.*;
 
