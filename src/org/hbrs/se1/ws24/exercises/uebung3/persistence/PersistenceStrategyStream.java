@@ -1,7 +1,8 @@
 package org.hbrs.se1.ws24.exercises.uebung3.persistence;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
+import java.io.*;
+import org.hbrs.se1.ws24.exercises.uebung2.*;
 import java.util.List;
+
 
 public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
 
@@ -22,7 +23,19 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
      * (Last Access: Oct, 15th 2024)
      */
     public void save(List<E> member) throws PersistenceException  {
+        ObjectOutputStream oos;
+        try{
+            oos = new ObjectOutputStream(new FileOutputStream(location));
+            oos.writeObject(member);
+        } catch (IOException e) {
+            throw new PersistenceException(PersistenceException.ExceptionType.ConnectionNotAvailable, "Member konnten nicht gespeichert werden: " + e.getMessage());
+        }
 
+        try{
+            oos.close();
+        } catch (IOException e) {
+            throw new PersistenceException(PersistenceException.ExceptionType.ConnectionNotAvailable, "Output Stream konnte nicht geschlossen werden: " + e.getMessage());
+        }
     }
 
     @Override
@@ -31,19 +44,36 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
      * Some coding examples come for free :-)
      * Take also a look at the import statements above ;-!
      */
-    public List<E> load() throws PersistenceException  {
+    public List<E> load() throws PersistenceException{
         // Some Coding hints ;-)
 
-        // ObjectInputStream ois = null;
-        // FileInputStream fis = null;
+        ObjectInputStream ois = null;
+
         // List<...> newListe =  null;
         //
         // Initiating the Stream (can also be moved to method openConnection()... ;-)
-        // fis = new FileInputStream( " a location to a file" );
+        try {
 
-        // Tipp: Use a directory (ends with "/") to implement a negative test case ;-)
-        // ois = new ObjectInputStream(fis);
+            // Tipp: Use a directory (ends with "/") to implement a negative test case ;-)
+            ois = new ObjectInputStream(new FileInputStream(location));
+            Object obj = ois.readObject();
 
+            if(obj instanceof List<?>){
+                return (List<E>) obj;
+            } else {
+                throw new PersistenceException(PersistenceException.ExceptionType.ImplementationNotAvailable,"Falscher Datentyp");
+            }
+        } catch (IOException e) {
+            throw new PersistenceException(PersistenceException.ExceptionType.ConnectionNotAvailable, "Member konnten nicht geladen werden: " + e.getMessage());
+        } catch (ClassNotFoundException e) {
+            throw new PersistenceException(PersistenceException.ExceptionType.ImplementationNotAvailable, "Laden fehlgeschlagen, Klasse nicht gefunden " + e.getMessage());
+        } finally {
+            try {
+                ois.close();
+            } catch (IOException e) {
+                throw new PersistenceException(PersistenceException.ExceptionType.ConnectionNotAvailable, "Input Stream konnte nicht geschlossen werden " + e.getMessage());
+            }
+        }
         // Reading and extracting the list (try .. catch ommitted here)
         // Object obj = ois.readObject();
 
@@ -52,6 +82,5 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
         // return newListe
 
         // and finally close the streams
-        return null;
     }
 }

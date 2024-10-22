@@ -4,12 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11b931b2-f8a2-4546-af99-1df1f0f211cc" name="Changes" comment="Ü2 fertig">
+    <list default="true" id="11b931b2-f8a2-4546-af99-1df1f0f211cc" name="Changes" comment="Ü1 in GIT integriert">
+      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung2/Memberview.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/persistence/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/test/ContainerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung1/control/GermanTranslator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung1/control/Translator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung1/control/factories/TranslatorFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung1/view/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codesSE2024.iml" beforeDir="false" afterPath="$PROJECT_DIR$/codesSE2024.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung2/ConcreteMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung2/ConcreteMember.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung2/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung2/Container.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung2/ContainerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung2/ContainerException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung2/test/ContainerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung2/test/ContainerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/persistence/PersistenceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/persistence/PersistenceException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/persistence/PersistenceStrategyStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/persistence/PersistenceStrategyStream.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +32,15 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {}
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/aldaGit/codesSEws24.git&quot;,
+    &quot;accountId&quot;: &quot;86ae8f32-9ad0-4893-a133-63ed206bc180&quot;
+  }
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -42,8 +57,14 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.Client.executor&quot;: &quot;Run&quot;,
     &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.ContainerTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ContainerTest (2).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ContainerTest.PersistenceStrategieMongoDBTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ContainerTest.StrategieTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.ContainerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GermanTranslatorTest.executor&quot;: &quot;Run&quot;,
     &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
     &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
     &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
@@ -71,11 +92,34 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tobia\Desktop\SE I\Übungen\GIT\test\org\hbrs\se1\ws24\tests\uebung1" />
+      <recent name="C:\Users\tobia\Desktop\SE I\Übungen\GIT\src\org\hbrs\se1\ws24\exercises\uebung1" />
       <recent name="C:\Users\tobia\Desktop\SE I\Übungen\GIT\src\org\hbrs\se1\ws24\exercises\uebung2" />
       <recent name="C:\Users\tobia\Desktop\SE I\Übungen\GIT\src\org\hbrs\se1\ws24\exercises" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.hbrs.se1.ws24.exercises.uebung2" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.hbrs.se1.ws24.exercises.uebung3.persistence" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.ContainerTestNew">
+    <configuration name="ContainerTest (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codesSE2024" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.hbrs.se1.ws24.exercises.uebung3.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.exercises.uebung3.test" />
+      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.exercises.uebung3.test.ContainerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ContainerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codesSE2024" />
       <extension name="coverage">
@@ -91,8 +135,59 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ContainerTestNew" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codesSE2024" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.hbrs.se1.ws24.exercises.uebung3.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.exercises.uebung3.test" />
+      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.exercises.uebung3.test.ContainerTestNew" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContainerTest.PersistenceStrategieMongoDBTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codesSE2024" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.hbrs.se1.ws24.exercises.uebung3.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.exercises.uebung3.test" />
+      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.exercises.uebung3.test.ContainerTest" />
+      <option name="METHOD_NAME" value="PersistenceStrategieMongoDBTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContainerTest.StrategieTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codesSE2024" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.hbrs.se1.ws24.exercises.uebung3.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.exercises.uebung3.test" />
+      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.exercises.uebung3.test.ContainerTest" />
+      <option name="METHOD_NAME" value="StrategieTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ContainerTestNew" />
+        <item itemvalue="JUnit.ContainerTest (2)" />
+        <item itemvalue="JUnit.ContainerTest.StrategieTest" />
+        <item itemvalue="JUnit.ContainerTest.PersistenceStrategieMongoDBTest" />
         <item itemvalue="JUnit.ContainerTest" />
       </list>
     </recent_temporary>
@@ -147,7 +242,23 @@
       <option name="project" value="LOCAL" />
       <updated>1728979053977</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Ü1 in GIT integriert">
+      <option name="closed" value="true" />
+      <created>1728979636946</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728979636946</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Ü1 in GIT integriert">
+      <option name="closed" value="true" />
+      <created>1728979693259</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1728979693259</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +278,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
     <MESSAGE value="Ü2 fertig" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ü2 fertig" />
+    <MESSAGE value="Ü1 in GIT integriert" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ü1 in GIT integriert" />
   </component>
 </project>
