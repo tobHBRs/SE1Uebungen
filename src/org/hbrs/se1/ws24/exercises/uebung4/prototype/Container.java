@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 /*
  * Klasse zum Management sowie zur Eingabe unnd Ausgabe von User-Stories.
@@ -24,7 +25,18 @@ import java.util.Scanner;
  * ToDo: Wie bewerten Sie diese Entscheidung? Was wäre ein sinnvolle Aufteilung (F2, F6)
  * 
  */
-
+/*/
+ F1: Gute Strategie zur Wiederverwendung,Klasse generic machen (Container<T> und List<T>)
+ 	 Es ist Thread-Safe, Hoher Speicherbedarf --> Constructor ist public muss private geamcht werden
+ F2: Zu viele Methoden in einer Klasse: PersistenceStrategy(load,store) als Klasse, Scanner als  Klasse
+ 	 Insgesamt hat die klasse zu viel Verantwortung
+ F3: Begrüßungstext raus aus der While Schleife
+ 	 Klasse muss interaface serializable implementieren nur dann Stream fähig
+ 	 die exception der store Methode wirdnicht behandelt sondern in die Main Method: Try chatch block spätestens dort
+ F4: Akzeptanzkriterium, Sortieren nach Priorisierungsformel mithilfe Collection.sort(this.liste);
+ 	 User Story muss das Interface comparable implementieren
+ F5:
+ */
 public class Container {
 	 
 	// Interne ArrayList zur Abspeicherung der Objekte vom Type UserStory
@@ -125,6 +137,7 @@ public class Container {
 
 		// Klassische Ausgabe ueber eine For-Each-Schleife
 		for (UserStory story : liste) {
+
 			System.out.println(story.toString());
 		}
 
@@ -132,6 +145,11 @@ public class Container {
 		//  Gerne auch mit Beachtung der neuen US1
 		//  (Filterung Projekt = "ein Wert (z.B. Coll@HBRS)" und z.B. Prio >=3
 		//  Todo: Implementierung Filterung mit Lambda (F5)
+		/*/String project;
+		List<UserStory> newListe =
+				this.liste.stream().
+						filter(userStory -> userStory.getProject().equals(project))
+						.collect(Collectors.toList());*/
 	}
 
 	/*
