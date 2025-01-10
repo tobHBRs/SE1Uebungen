@@ -28,6 +28,6 @@ public class TextDocument extends AbstractCoreDocument {
         } else if (this.coding.equals(Encoding.UTF16)) {
             return 164;
         }
-        return 0;
+        return 1000000;
     }
 }
