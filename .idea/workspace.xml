@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11b931b2-f8a2-4546-af99-1df1f0f211cc" name="Changes" comment="Ü4 FERTIG">
-      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung9/AbstractCoreDocument.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung9/AbstractDocument.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung9/ComplexDocument.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung9/Document.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung9/GraficDocument.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung9/TestClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung9/TextDocument.java" afterDir="false" />
+    <list default="true" id="11b931b2-f8a2-4546-af99-1df1f0f211cc" name="Changes" comment="Ü9 FERTIG">
+      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung10/BoundingBoxFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung10/MyPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung10/MyPrettyRectangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/demo/kapitel6/BuchungDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/demo/kapitel6/BuchungDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung9/TextDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung9/TextDocument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/org/hbrs/se1/ws24/tests/uebung10/MyPrettyRectangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/org/hbrs/se1/ws24/tests/uebung10/MyPrettyRectangleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +66,7 @@
     "JUnit.ContainerTestNew.executor": "Run",
     "JUnit.ContainerTestUserStorys.executor": "Run",
     "JUnit.GermanTranslatorTest.executor": "Run",
+    "JUnit.MyPrettyRectangleTest.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
@@ -94,6 +94,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tobia\Desktop\SE I\Übungen\GIT\src\org\hbrs\se1\ws24\exercises\uebung10" />
       <recent name="C:\Users\tobia\Desktop\SE I\Übungen\GIT\test\org\hbrs\se1\ws24\tests\uebung1" />
       <recent name="C:\Users\tobia\Desktop\SE I\Übungen\GIT\src\org\hbrs\se1\ws24\exercises\uebung1" />
       <recent name="C:\Users\tobia\Desktop\SE I\Übungen\GIT\src\org\hbrs\se1\ws24\exercises\uebung2" />
@@ -108,7 +109,7 @@
       <recent name="org.hbrs.se1.ws24.exercises.uebung3.persistence" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestClient">
+  <component name="RunManager" selected="JUnit.MyPrettyRectangleTest">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.exercises.uebung4.meineLösung.Client" />
       <module name="codesSE2024" />
@@ -148,21 +149,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContainerTestNew" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="codesSE2024" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.hbrs.se1.ws24.exercises.uebung3.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.exercises.uebung3.test" />
-      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.exercises.uebung3.test.ContainerTestNew" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ContainerTestUserStorys" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codesSE2024" />
       <extension name="coverage">
@@ -178,13 +164,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyPrettyRectangleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codesSE2024" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.hbrs.se1.ws24.tests.uebung10.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.tests.uebung10" />
+      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.tests.uebung10.MyPrettyRectangleTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyPrettyRectangleTest" />
         <item itemvalue="Application.TestClient" />
         <item itemvalue="JUnit.ContainerTestUserStorys" />
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.Container" />
-        <item itemvalue="JUnit.ContainerTestNew" />
       </list>
     </recent_temporary>
   </component>
@@ -270,7 +271,31 @@
       <option name="project" value="LOCAL" />
       <updated>1731259409523</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Ü4 FERTIG">
+      <option name="closed" value="true" />
+      <created>1736513202121</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1736513202121</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Ü9 FERTIG">
+      <option name="closed" value="true" />
+      <created>1736513215068</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1736513215068</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Ü9 FERTIG">
+      <option name="closed" value="true" />
+      <created>1736513316968</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1736513316968</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,6 +318,7 @@
     <MESSAGE value="Ü1 in GIT integriert" />
     <MESSAGE value="Ü3 FERTIG" />
     <MESSAGE value="Ü4 FERTIG" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ü4 FERTIG" />
+    <MESSAGE value="Ü9 FERTIG" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ü9 FERTIG" />
   </component>
 </project>

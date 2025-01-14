@@ -12,6 +12,8 @@ public class BuchungDAO {
     Buchung createBuchung( BuchungDTO buchungDTO ) { return null; }
 
     // Weitere Methoden gemäß CRUD? [Todo]
+    String readBuchung(BuchungDTO buchungDTO){return "toString";}
+
     void deleteBuchung( Buchung buchung ) {}
     void updateBuchung( Buchung buchung ) {}
     Buchung getBuchung( int id ) { return null; };
